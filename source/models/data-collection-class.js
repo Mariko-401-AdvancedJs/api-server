@@ -15,6 +15,7 @@ class FoodCollection {
   }
 
   create(record) {
+    console.log('hitting collection create:', record);
     let newRec = new this.model(record);
     return newRec.save();
   }
@@ -24,6 +25,7 @@ class FoodCollection {
   }
 
   delete(_id) {
+    console.log(_id);
     return this.model.findByIdAndDelete(_id);
   }
 }
