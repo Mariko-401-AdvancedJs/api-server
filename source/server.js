@@ -4,16 +4,6 @@ const express = require('express');
 const app = express();
 require('dotenv').config();
 
-const mongoose = require('mongoose');
-mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true });
-
-const db = mongoose.connection;
-db.on('error', console.error.bind(console, 'connection error:'));
-db.once('open', function () {
-  console.log('I am connected to db')
-});
-
-
 const logger = require('./middleware/logger');
 const notFoundHandler = require('./error-handlers/404');
 const serverError = require('./error-handlers/500');
