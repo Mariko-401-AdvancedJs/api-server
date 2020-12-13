@@ -2,7 +2,6 @@
 
 const express = require('express');
 const app = express();
-require('dotenv').config();
 
 const logger = require('./middleware/logger');
 const notFoundHandler = require('./error-handlers/404');
