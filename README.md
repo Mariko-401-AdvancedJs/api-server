@@ -5,9 +5,9 @@
 ### Author: Mariko Alvarado
 
 ### Links and Resources
--  Stacy
+-  Stacy, Kristian
 
-Did not figure out mongo for deployment yet.
+- [front-end application](https://mariko-api-server.herokuapp.com/food)
 
 ### Setup
 
@@ -20,7 +20,7 @@ Did not figure out mongo for deployment yet.
 
 #### How to initialize/run your application (where applicable)
 
-
+Plug in front end url into postman and perform different requests.
 
 #### How to use your library (where applicable)
 
